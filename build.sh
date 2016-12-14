@@ -1,1 +1,0 @@
-docker build -t artyou/killbill:0.18.1 .
