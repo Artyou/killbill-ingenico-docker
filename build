@@ -1,0 +1,6 @@
+docker build -t artyou/killbill:0.18.1 .
+read -p "Push the image to registry? (Y/n): " ans_push
+ans_push=${ans_push:-n}
+if [ "$ans_push" == "y" -o "$ans_push" == "Y" ]; then
+  docker push artyou/killbill:0.18.1
+fi
